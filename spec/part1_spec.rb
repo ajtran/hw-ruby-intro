@@ -67,8 +67,8 @@ end
       expect(sum_to_n?([-1], -1)).to be false
       expect(sum_to_n?([-3], 0)).to be false
     end
-    it "returns true if the empty array sums to zero [5 points]" , points: 5 do
-      expect(sum_to_n?([], 0)).to be true
+    it "returns false if the array is empty [5 points]" , points: 5 do
+      expect(sum_to_n?([], 0)).to be false
       expect(sum_to_n?([], 7)).to be false
     end
   end
