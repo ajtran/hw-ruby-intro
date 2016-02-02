@@ -1,7 +1,7 @@
 require 'ruby_intro.rb'
 
 describe 'Ruby intro part 1' do
-=begin
+begin
   describe "#sum" do
     it "should be defined" do
       expect { sum([1,3,4]) }.not_to raise_error
@@ -19,7 +19,8 @@ describe 'Ruby intro part 1' do
       expect(sum([])).to be_zero
     end
   end
-
+# =end
+# =begin
   describe "#max_2_sum" do
     it "should be defined" do
       expect { max_2_sum([1,2,3]) }.not_to raise_error
@@ -38,7 +39,8 @@ describe 'Ruby intro part 1' do
       expect(max_2_sum([3])).to eq(3)
     end
   end
-=end
+end
+# =begin
   describe "#sum_to_n" do
     it "should be defined" do
       expect { sum_to_n?([1,2,3],4) }.not_to raise_error
@@ -70,4 +72,5 @@ describe 'Ruby intro part 1' do
       expect(sum_to_n?([], 7)).to be false
     end
   end
+# =end
 end
